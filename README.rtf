@@ -1,50 +1,40 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2636
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16380\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs28 \cf0 This folder contains:\
-\
-1. ratings.csv\
-\
-2. movies.csv\
-\
-3. matrix_factorization.py - script for tuning the MF model hyperparameters, creating a tuned model, and saving the model.\
-	* is_hyperparameter_tuning (boolean) - if True the script is on tuning mode, if False the script uses 	  tuned hyperparameters to train a final model and save it. \
-	* files needed to run: \'93ratings.csv\'94 (local)\
-	* Output: folder named: \'93final_mf_model\'94 - this folder has all the metadata of the model and will later be 	  loaded as a whole\
-\
-4. final_mf_model\
-\
-5. content_based_model - script for tuning the CB model hyperparameters, creating a tuned model, and saving the model.\
-	* is_hyperparameter_tuning (boolean) - if True the script is on tuning mode, if False the script uses 	  tuned hyperparameters to train a final model and save it. \
-	* files needed to run: \'93ratings.csv\'94 (local), \'93movies.csv\'94 (local)\
-	* Output: folder named: \'93final_cb_model\'94 - this folder has all the metadata of the model and will later be 	  loaded as a whole\
-\
-6. final_cb_model\
-\
-7. content_based_cosine_sim.py - content based recommender using cosine similarity.\
-	* files needed to run: \'93movies.csv\'94 (local)\
-	* Output: None. Only prints recommendations\
-\
-8. MSE_bias_calculation.py - calculates all the MSE baselines.\
-	* files needed to run: \'93ratings.csv\'94 (local)\
-	* Output: \'93mse_bias_calculations.pickle\'94 - contains all the baseline MSE calculation as a dictionary and will be loaded later to our Jupyter Notebook.\
-\
-9. mse_bias_calculations.pickle\
-\
-10. recommend_with_model.py\
-	* files needed to run: \'93ratings.csv\'94 (local), \'93movies.csv\'94 (local), \'93final_cb_model\'94 or \'93final_mf_model\'94\
-	* Output: prints recommendations\
-\
-11. Recommendation and Learning - Final Project-VF02.ipynb - Jupyter Notebook\
-\
-12. Recommendation and Learning - Final Project-VF02.html- our project report\
-\
-13. Installation.txt\
-\
-\
-\
-}
+This folder contains:
+
+1. ratings.csv
+
+2. movies.csv
+
+3. matrix_factorization.py - script for tuning the MF model hyperparameters, creating a tuned model, and saving the model.
+	* is_hyperparameter_tuning (boolean) - if True the script is on tuning mode, if False the script uses tuned hyperparameters to train a final model and save it.
+	* files needed to run: ratings.csv
+	* Output: folder named: final_mf_model- this folder has all the metadata of the model and will later be loaded as a whole.
+
+4. final_mf_model
+
+5. content_based_model - script for tuning the CB model hyperparameters, creating a tuned model, and saving the model.
+	* is_hyperparameter_tuning (boolean) - if True the script is on tuning mode, if False the script uses tuned hyperparameters to train a final model and save it. 
+	* files needed to run: ratings.csv, movies.csv
+	* Output: folder named: final_cb_model - this folder has all the metadata of the model and will later be loaded as a whole.
+
+6. final_cb_model
+
+7. content_based_cosine_sim.py - content based recommender using cosine similarity.
+	* files needed to run: movies.csv
+	* Output: None. Only prints recommendations.
+
+8. MSE_bias_calculation.py - calculates all the MSE baselines.
+	* files needed to run: ratings.csv
+	* Output: mse_bias_calculations.pickle - contains all the baseline MSE calculation as a dictionary and will be loaded later to our Jupyter Notebook.
+
+9. mse_bias_calculations.pickle
+
+10. recommend_with_model.py
+	* files needed to run: ratings.csv, movies.csv, final_cb_model or final_mf_model
+	* Output: prints recommendations.
+
+11. Recommendation and Learning - Final Project-VF02.ipynb - Jupyter Notebook
+
+12. Recommendation and Learning - Final Project-VF02.html- our project report
+
+13. Installation.txt
